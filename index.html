@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+    <link rel="icon" href="./images/Smiley.svg.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="loading d-none">
+        <span class="loader"></span>
+    </div>
+    <section class="home " id="home">
+        <header>
+            <img src="./images/wraper.png" class="w-100" alt="">
+        </header>
+        <nav class="navbar navbar-expand-lg  col-lg-9 col-md-6 ">
+            <div class="container ">
+                <a class="navbar-brand" href="#"><img src="./images/logo-sm.png" class="me-2" alt="logo">Game
+                    Reviews</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container mt-4">
+                <div class="row g-4" id="gamesData">
+                    <!-- <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="./images/thumbnail.jpg" class="w-100" alt="game">
+                                <div class="caption">
+                                    <div class="head d-flex justify-content-between align-items-center">
+                                        <h3>Overwatch 2</h3>
+                                        <span class="badge ">Free</span>
+                                    </div>
+                                    <p>A hero-focused first-person team shooter from Blizzard Entertainment.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <span class="badge">shooter</span>
+                                <span class="badge">pc (windows)</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+        </main>
+    </section>
+    <section class="details d-none" id="details">
+        <div class="container py-4 text-white">
+            <div class="head d-flex justify-content-between align-items-center">
+                <h4>Details Game</h4>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </div>
+            <div class="row g-4 pt-4">
+                <div class="col-md-4" id="detailsphoto">
+                    <!-- <img src="./images/thumbnail.jpg" class="w-100" alt=""> -->
+                </div>
+                <div class="col-md-8">
+                    <h3 id="gameTitle">Title:</h3>
+                    <p>Category: <span class="badge" id="Category"></span></p>
+                    <p>Platform: <span class="badge" id="Platform"></span></p>
+                    <p>Status: <span class="badge" id="Status"></span></p>
+                    <p id="description">
+                    </p>
+                    <a class="btn btn-outline-warning" id="goToGameUrl" target="_blank">Show Game</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ////////////////////// -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
