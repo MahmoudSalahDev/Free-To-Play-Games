@@ -98,6 +98,7 @@ function displayGames() {
 
 
             async function getDetails(num) {
+                loading.classList.replace("d-none", "d-flex")
                 const options = {
                     method: 'GET',
                     headers: {
@@ -118,6 +119,7 @@ function displayGames() {
                 goToGameUrl.setAttribute("href", `${gameDetails.game_url}`);
                 details.classList.remove("d-none")
                 home.classList.add("d-none")
+                loading.classList.replace("d-flex", "d-none")
             }
             getDetails(this.getAttribute("data-id"))
         })
