@@ -1,12 +1,5 @@
-// let mmorpg = document.getElementById("mmorpg")
-// let shooter = document.getElementById("shooter")
-// let sailing = document.getElementById("sailing")
-// let permadeath = document.getElementById("permadeath")
-// let superhero = document.getElementById("superhero")
-// let pixel = document.getElementById("pixel")
 let loading = document.querySelector(".loading");
 let gamesData = document.getElementById("gamesData");
-
 let details = document.getElementById("details")
 let Category = document.getElementById("Category")
 let Platform = document.getElementById("Platform")
@@ -45,25 +38,16 @@ async function getApi(search) {
     const api = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${search}`, options)
     const response = await api.json();
     gamesList = response;
-    // console.log(gamesList)
     displayGames()
     loading.classList.replace("d-flex", "d-none")
 
 }
 links.forEach(element => {
     element.addEventListener("click", function () {
-        // console.log(this.innerHTML);
         getApi(this.innerHTML)
     }
     )
 });
-// links.addEventListener("click", function () {
-
-
-//     getDegree(findInput.value)
-
-// })
-// console.log(gamesList)
 getApi("mmorpg")
 let gameDetails = {}
 function displayGames() {
@@ -94,9 +78,6 @@ function displayGames() {
     allCols = document.querySelectorAll(".all-cols");
     allCols.forEach(element => {
         element.addEventListener("click", function () {
-            // console.log(this.getAttribute("data-id"));
-
-
             async function getDetails(num) {
                 loading.classList.replace("d-none", "d-flex")
                 const options = {
@@ -109,7 +90,6 @@ function displayGames() {
                 const api = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${num}`, options)
                 const response = await api.json();
                 gameDetails = response;
-                // console.log(gameDetails);
                 detailsphoto.innerHTML = `<img src="${gameDetails.thumbnail}" class="w-100" alt="${gameDetails.title} thumbnail">`
                 gameTitle.innerHTML = `Title: ${gameDetails.title}`
                 Category.innerHTML = gameDetails.genre

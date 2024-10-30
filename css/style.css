@@ -13,7 +13,7 @@ body {
 }
 
 /* start loading */
-.loading{
+.loading {
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.815);
@@ -21,9 +21,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .loader {
-    /* position: fixed; */
-    /* inset: 0; */
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -64,7 +63,6 @@ body {
     background-color: #3a497b;
     border-radius: 25px;
     box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
-    /* transform: translateY(-50%); */
     margin-top: -31.5px;
     margin-inline: auto;
 }
@@ -137,9 +135,11 @@ body {
     transition: filter 0.5s;
 
 }
-.row .card:hover .caption span.badge{
+
+.row .card:hover .caption span.badge {
     filter: grayscale(0%);
 }
+
 .row .caption p {
     color: #888a8d;
     font-size: 14px;
@@ -157,20 +157,25 @@ body {
     inset: 0;
     background-color: #27282b;
 }
-#close{
+
+#close {
     font-size: 30px;
     color: #979797;
     cursor: pointer;
 }
-#close:hover{
+
+#close:hover {
     color: #c4c4c4;
 
 }
-.details .badge{
+
+.details .badge {
     background-color: #0dcaf0;
     color: black;
 }
-.details #goToGameUrl{
+
+.details #goToGameUrl {
     color: white;
 }
+
 /* end  details */
